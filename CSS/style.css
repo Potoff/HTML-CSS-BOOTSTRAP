@@ -72,3 +72,15 @@ section{
 article{
   padding-bottom: 2em;
 }
+
+footer{
+  background-color: #AF473C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+footer > div > h3{
+  color: #3C3C3C;
+}
