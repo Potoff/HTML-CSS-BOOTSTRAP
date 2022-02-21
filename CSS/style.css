@@ -22,6 +22,11 @@ html {
   a{
     text-decoration: none;
     color: #3C3C3C;
+    font-weight: bolder;
+  }
+
+  a:hover{
+    color:#626E60;
   }
 
   img {
@@ -37,14 +42,16 @@ html {
     color: #945D60 ;
     padding-bottom: 1em;
     text-decoration: underline;
+    text-align: center;
   }
 
-.logo-wrapper > img{
+
+.logo-wrapper  img{
   width: 5rem;
   padding-right: 2em;
 }
 
-.logo-wrapper{
+.logo-wrapper > a{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -66,21 +73,61 @@ section  img{
 
 section{
   margin: 1em;
-
+  text-align: center;
 }
 
 article{
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  border-bottom: #626E60 2px solid; 
+}
+
+.container-custom{
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 footer{
   background-color: #AF473C;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  align-content: space-between;
 }
 
 footer > div > h3{
   color: #3C3C3C;
+}
+
+.socialMedia{
+  margin-right: 2em;
+  margin-left: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bi{
+  margin-right: 0.5em;
+}
+
+.potager{
+  border-top: #626E60 0.5px solid; ;
+}
+
+.presentation{
+  margin-bottom: 1em;
+}
+
+.btn-custom{
+  border-radius: 10%;
+  border: solid 0.5px #3C3C3C;
+  background-color: #AF473C;
+  font-weight: bolder;
+}
+
+.btn-custom:hover{
+  background-color: #945D60;
 }
