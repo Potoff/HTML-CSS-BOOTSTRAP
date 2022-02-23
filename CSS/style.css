@@ -11,7 +11,7 @@ html {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Serif', sans-serif;
     color: #3C3C3C;
   }
   
@@ -63,6 +63,9 @@ header{
   top: 0px;
   border-bottom: #3C3C3C 0.5px solid;
   padding: 0.4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 section  img{
@@ -95,6 +98,7 @@ footer{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: auto;
 }
 
 footer > div > h3{
@@ -104,9 +108,9 @@ footer > div > h3{
 .socialMedia{
   margin-right: 2em;
   margin-left: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block;
+  text-align: center;
+  padding-top: 1em;
 }
 
 .bi{
@@ -130,4 +134,99 @@ footer > div > h3{
 
 .btn-custom:hover{
   background-color: #945D60;
+}
+
+/* Medium Breakpoint */
+@media only screen and (min-width: 768px){
+
+  img{
+    max-width: 75%;
+    height: auto;
+  }
+
+  section{
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+}
+
+/* Large Breakpoint */
+@media only screen and (min-width: 1350px){
+
+  .img1, .img2, .img3{
+    max-width: 75%;
+  }
+
+  .img4, .img5, .img6{
+    max-width: 33%;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+   header  a:hover{
+    background-color:#945D60;
+    transition: 0.5s ease-in-out 0.1s;
+    border-radius: 10%;
+  }
+
+  section{
+    margin: 2em 20em 5em 20em;
+    text-align: center;
+  }
+.articleOne, .articleThird{
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas : "h h"
+                        "t i";
+ align-items: center;
+ justify-items: center;
+}
+
+.articleTwo{
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "h h"
+                       "i t";
+  align-items: center;
+  justify-items: center;
+} 
+
+article{
+  padding: 2em 0 2em 0;
+}
+
+article > h2{
+  font-weight: bolder;
+  margin-right: 2em;
+  margin-left: 2em;
+  grid-area: h;
+}
+
+.p1, .p3, .p2{
+  grid-area: t;
+  align-self: center;
+}
+
+.p1  img, .p3  img, .p2 img{
+  grid-area: i;
+  align-self: center;
+}
+
+.friends{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
 }
